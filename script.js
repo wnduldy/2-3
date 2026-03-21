@@ -1,6 +1,5 @@
 const assignments = [
-{subject:"물리", date:"2026-04-10", content:"충격량 실험 보고서"},
-{subject:"영어", date:"2026-04-03", content:"발표 수행평가"}
+{subject:"국어", date:"03-26 3교시", content:"현대소설 감상 및 분석 - 독서일지(2차시/10차시"}
 ];
 
 // 날짜순 정렬
@@ -18,7 +17,7 @@ list.appendChild(li);
 }
 
 // 급식 (임시 데이터 → 나중에 API 연결 가능)
-const mealText = "김치볶음밥 / 계란국 / 치킨";
+const mealText = "차수수밥, 짬뽕국, 가지양파무침, 숫불맛닭갈비볶음, 누룽지꿔바로우/소스, 배추김치, 패션후르츠주스";
 
 if(document.getElementById("meal")){
 document.getElementById("meal").innerText = mealText;
