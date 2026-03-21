@@ -17,7 +17,7 @@ list.appendChild(li);
 }
 
 // 급식 (임시 데이터 → 나중에 API 연결 가능)
-const mealText = "차수수밥/짬뽕국/가지양파무침/숫불맛닭갈비볶음/누룽지꿔바로우, 소스/배추김치/패션후르츠주스";
+const mealText = "차수수밥, 짬뽕국, 가지양파무침, 숫불맛닭갈비볶음, 누룽지꿔바로우/소스, 배추김치, 패션후르츠주스";
 
 if(document.getElementById("meal")){
 document.getElementById("meal").innerText = mealText;
