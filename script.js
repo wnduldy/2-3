@@ -1,7 +1,7 @@
 // 수행평가
 const assignments = [
-{subject:"국어", date:"2026-03-26", content:"독서일지"},
-{subject:"영어", date:"2026-03-27", content:"쓰기 수행평가"}
+{subject:"국어", date:"03-26", content:"독서일지"},
+{subject:"영어", date:"03-27", content:"쓰기 수행평가"}
 ];
 
 const list = document.getElementById("assignments") || document.getElementById("assignmentList");
@@ -17,9 +17,9 @@ if(list){
 // 학사일정
 const schedules = [
 "3/24 전국연합학력평가",
-"3/25~31 상담주간",
-"3/26 교육과정설명회",
-"4/27~30 1회고사"
+"3/25~31 학부모 상담주간",
+"3/26 학교교육과정설명회",
+"4/27~30 1학기 1회고사"
 ];
 
 const calList = document.getElementById("calendarList");
