@@ -18,7 +18,7 @@ list.appendChild(li);
 }
 
 // 급식 (임시 데이터 → 나중에 API 연결 가능)
-const KEY = "b008afcfbbd24a9fbe72158e33d09edd	";
+const KEY = "b008afcfbbd24a9fbe72158e33d09edd";
 const ATPT = "I10";        // 세종교육청
 const SCHOOL = "9300191";  // 보람고
 
