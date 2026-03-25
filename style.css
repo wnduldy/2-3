@@ -108,3 +108,14 @@ tr:nth-child(even){
   white-space: pre-line;
   line-height:1.6;
 }
+/* 박스 클릭 링크 */
+.box-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box-link:hover .box {
+  transform: translateY(-3px);
+  transition: 0.2s;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
