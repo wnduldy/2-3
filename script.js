@@ -1,7 +1,7 @@
 // 수행평가
 const assignments = [
-{subject:"국어", date:"03-26", content:"독서일지"},
-{subject:"영어", date:"03-27", content:"쓰기 수행평가"}
+{subject:"국어", date:"03-26", content:"현대소설 감상 및 분석 - 독서일지(2차시/10차시)"},
+{subject:"영어", date:"03-27", content:"<지속가능발전목표 달성 실천 제안서 작성> 쓰기 수행평가 개요 작성"}
 ];
 
 const list = document.getElementById("assignments") || document.getElementById("assignmentList");
