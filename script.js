@@ -25,3 +25,22 @@ document.getElementById("meal").innerText = mealText;
 if(document.getElementById("lunch")){
 document.getElementById("lunch").innerText = mealText;
 }
+
+
+// ===== 시험 D-Day =====
+const examDate = new Date("2026-04-27");
+
+function getDDay(date){
+  const today = new Date();
+  const target = new Date(date);
+  const diff = Math.ceil((target - today)/(1000*60*60*24));
+  return diff;
+}
+
+const examDiff = getDDay(examDate);
+
+if(document.getElementById("examDday")){
+  document.getElementById("examDday").innerText =
+    examDiff >= 0 ? "D-" + examDiff : "시험";
+}
+
