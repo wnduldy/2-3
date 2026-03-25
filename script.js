@@ -1,3 +1,24 @@
+fetch(url)
+.then(res=>res.json())
+.then(data=>{
+  const meal = data.mealServiceDietInfo[1].row[0].DDISH_NM
+    .replace(/<br\/>/g,"\n");
+
+  // 👉 메인 페이지
+  if(document.getElementById("lunch")){
+    document.getElementById("lunch").innerText = meal;
+  }
+
+  // 👉 급식 페이지
+  if(document.getElementById("meal")){
+    document.getElementById("meal").innerText = meal;
+  }
+})
+.catch(()=>{
+  if(document.getElementById("meal")){
+    document.getElementById("meal").innerText = "급식 없음";
+  }
+});
 const assignments = [
 {subject:"국어", date:"03-26 목요일 3교시", content:"현대소설 감상 및 분석 - 독서일지(2차시/10차시)"}, {subject:"영어", date:"03-27 금요일 3교시", content:"<지속가능발전목표 달성 실천 제안서 작성> 쓰기 수행평가 개요 작성"}
 ];
