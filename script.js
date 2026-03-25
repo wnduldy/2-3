@@ -33,7 +33,7 @@ if(calList){
 }
 
 // 급식
-const KEY = "여기에_API_KEY";
+const KEY = ""b008afcfbbd24a9fbe72158e33d09edd";
 const ATPT = "I10";
 const SCHOOL = "9300191";
 
