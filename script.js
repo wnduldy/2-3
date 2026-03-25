@@ -17,7 +17,29 @@ list.appendChild(li);
 }
 
 // 급식 (임시 데이터 → 나중에 API 연결 가능)
-const mealText = "쇠고기무국, 묵은지김치찜, 생깻잎지, 닭꼬치(킹콩소스), 오이소박이(자율), 과일(오렌지), 차조밥";
+const KEY = "b008afcfbbd24a9fbe72158e33d09edd	";
+const ATPT = "I10";        // 세종교육청
+const SCHOOL = "9300191";  // 보람고
+
+const today = new Date();
+const y = today.getFullYear();
+const m = String(today.getMonth()+1).padStart(2,'0');
+const d = String(today.getDate()).padStart(2,'0');
+const date = y+m+d;
+
+const url = `https://open.neis.go.kr/hub/mealServiceDietInfo?KEY=${KEY}&Type=json&ATPT_OFCDC_SC_CODE=${ATPT}&SD_SCHUL_CODE=${SCHOOL}&MLSV_YMD=${date}`;
+
+fetch(url)
+.then(res=>res.json())
+.then(data=>{
+  const meal = data.mealServiceDietInfo[1].row[0].DDISH_NM
+    .replace(/<br\/>/g,"\n");
+
+  document.getElementById("meal").innerText = meal;
+})
+.catch(()=>{
+  document.getElementById("meal").innerText = "급식 없음";
+});
 
 if(document.getElementById("meal")){
 document.getElementById("meal").innerText = mealText;
