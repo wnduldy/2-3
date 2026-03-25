@@ -67,3 +67,6 @@ if(document.getElementById("examDday")){
     examDiff >= 0 ? "D-" + examDiff : "시험";
 }
 
+
+
+<script src="script.js"></script>
