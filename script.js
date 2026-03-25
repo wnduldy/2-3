@@ -69,4 +69,4 @@ if(document.getElementById("examDday")){
 
 
 
-<script src="script.js"></script>
+
