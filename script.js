@@ -1,8 +1,3 @@
-fetch(url)
-.then(res=>res.json())
-.then(data=>{
-  const meal = data.mealServiceDietInfo[1].row[0].DDISH_NM
-    .replace(/<br\/>/g,"\n");
 
   // 👉 메인 페이지
   if(document.getElementById("lunch")){
