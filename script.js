@@ -33,22 +33,35 @@ const url = `https://open.neis.go.kr/hub/mealServiceDietInfo?KEY=${KEY}&Type=jso
 fetch(url)
 .then(res=>res.json())
 .then(data=>{
-  const meal = data.mealServiceDietInfo[1].row[0].DDISH_NM
+  if(!data.mealServiceDietInfo){
+    if(document.getElementById("meal")){
+      document.getElementById("meal").innerText = "급식 정보 없음";
+    }
+    if(document.getElementById("lunch")){
+      document.getElementById("lunch").innerText = "급식 정보 없음";
+    }
+    return;
+  }
+
+  const mealText = data.mealServiceDietInfo[1].row[0].DDISH_NM
     .replace(/<br\/>/g,"\n");
 
-  document.getElementById("meal").innerText = meal;
+  if(document.getElementById("meal")){
+    document.getElementById("meal").innerText = mealText;
+  }
+
+  if(document.getElementById("lunch")){
+    document.getElementById("lunch").innerText = mealText;
+  }
 })
 .catch(()=>{
-  document.getElementById("meal").innerText = "급식 없음";
+  if(document.getElementById("meal")){
+    document.getElementById("meal").innerText = "불러오기 실패";
+  }
+  if(document.getElementById("lunch")){
+    document.getElementById("lunch").innerText = "불러오기 실패";
+  }
 });
-
-if(document.getElementById("meal")){
-document.getElementById("meal").innerText = mealText;
-}
-if(document.getElementById("lunch")){
-document.getElementById("lunch").innerText = mealText;
-}
-
 
 // ===== 시험 D-Day =====
 const examDate = new Date("2026-04-27");
