@@ -77,7 +77,7 @@ const examDiff = getDDay(examDate);
 
 if(document.getElementById("examDday")){
   document.getElementById("examDday").innerText =
-    examDiff >= 0 ? "D-" + examDiff : "시험";
+    examDiff >= 0 ? "1회고사 D-" + examDiff : "시험";
 }
 
 
