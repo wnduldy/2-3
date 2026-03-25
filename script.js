@@ -17,7 +17,7 @@ list.appendChild(li);
 }
 
 // 급식 (임시 데이터 → 나중에 API 연결 가능)
-const mealText = "쇠고기무국, 묵은지김치찜, 생깻잎지, 닭꼬치(킹콩소스), 오이소박이(자울), 과일(오렌지), 차조밥";
+const mealText = "쇠고기무국, 묵은지김치찜, 생깻잎지, 닭꼬치(킹콩소스), 오이소박이(자율), 과일(오렌지), 차조밥";
 
 if(document.getElementById("meal")){
 document.getElementById("meal").innerText = mealText;
