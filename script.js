@@ -62,6 +62,19 @@ fetch(url)
 })
 .catch(()=>{});
 
+// 사진 클릭 확대
+const images = document.querySelectorAll(".gallery img");
+
+images.forEach(img=>{
+  img.addEventListener("click", ()=>{
+    document.getElementById("popup").style.display = "flex";
+    document.getElementById("popupImg").src = img.src;
+  });
+});
+
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
 // D-Day
 const examName = "1회고사";
 const examDate = new Date("2026-04-27");
