@@ -19,6 +19,10 @@ h2 {
   font-size:22px;
 }
 
+#examDday {
+  font-weight: bold;
+  color: red;
+}
 /* 네비게이션 */
 nav {
   margin-top:15px;
