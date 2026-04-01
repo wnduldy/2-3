@@ -65,16 +65,26 @@ fetch(url)
 // 사진 클릭 확대
 const images = document.querySelectorAll(".gallery img");
 
+const images = document.querySelectorAll(".gallery img");
+
 images.forEach(img=>{
   img.addEventListener("click", ()=>{
-    document.getElementById("popup").style.display = "flex";
-    document.getElementById("popupImg").src = img.src;
+    const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popupImg");
+
+    if(popup && popupImg){
+      popup.style.display = "flex";
+      popupImg.src = img.src;
+    }
   });
 });
 
 function closePopup(){
-  document.getElementById("popup").style.display = "none";
+  const popup = document.getElementById("popup");
+  if(popup) popup.style.display = "none";
 }
+
+
 function toggleGallery(galleryId, btnId){
   const gallery = document.getElementById(galleryId);
   const btn = document.getElementById(btnId);
