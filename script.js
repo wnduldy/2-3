@@ -75,9 +75,11 @@ images.forEach(img=>{
 function closePopup(){
   document.getElementById("popup").style.display = "none";
 }
-function toggleGallery(){
-  const gallery = document.getElementById("gallery");
-  const btn = document.getElementById("moreBtn");
+function toggleGallery(galleryId, btnId){
+  const gallery = document.getElementById(galleryId);
+  const btn = document.getElementById(btnId);
+
+  if(!gallery || !btn) return;
 
   gallery.classList.toggle("open");
 
