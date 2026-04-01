@@ -50,7 +50,29 @@ nav a:hover {
   border-radius:16px;
   box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
+/* 처음엔 일부만 보이게 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-height: 220px;
+  overflow: hidden;
+}
 
+/* 펼쳤을 때 */
+.gallery.open {
+  max-height: none;
+}
+
+/* 버튼 */
+button {
+  margin-top:10px;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background:#2d3a4b;
+  color:white;
+}
 /* 테이블 기본 */
 table {
   width:100%;
