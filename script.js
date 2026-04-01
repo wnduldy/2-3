@@ -75,6 +75,18 @@ images.forEach(img=>{
 function closePopup(){
   document.getElementById("popup").style.display = "none";
 }
+function toggleGallery(){
+  const gallery = document.getElementById("gallery");
+  const btn = document.getElementById("moreBtn");
+
+  gallery.classList.toggle("open");
+
+  if(gallery.classList.contains("open")){
+    btn.innerText = "접기";
+  } else {
+    btn.innerText = "더보기";
+  }
+}
 // D-Day
 const examName = "1회고사";
 const examDate = new Date("2026-04-27");
