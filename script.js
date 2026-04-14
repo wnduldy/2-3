@@ -1,7 +1,6 @@
 // 수행평가
 const assignments = [
-{subject:"국어", date:"04-09 목요일 3교시", content:"현대소설 감상 및 분석 - 독서일지(4차시/10차시)"},
-{subject:"영어", date:"04-10 금요일 3교시", content:"<지속가능발전목표 달성 실천 제안서 작성> 쓰기 수행평가 최종안 작성"}
+{subject:"국어", date:"04-16 목요일 3교시", content:"현대소설 감상 및 분석 - 독서일지(5차시/10차시)"}
 ];
 
 const list = document.getElementById("assignmentList");
