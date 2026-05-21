@@ -19,8 +19,8 @@ const schedules = [
 "5/25 부처님 오신 날 대체공휴일",
 "5/27 수업 공개의 날",
 "6/3 전국동시지방선거일",
-"6/4 전국연합학력평가"
-"6/8~12 진로탐색주간"
+"6/4 전국연합학력평가",
+"6/8~12 진로탐색주간",
 "6/30~7/3 1학기 2회고사"
 ];
 
@@ -111,5 +111,5 @@ const diff = Math.ceil((examDate - new Date())/(1000*60*60*24));
 
 const dday = document.getElementById("examDday");
 if(dday){
-  dday.innerText = diff >= 0 ? `1회고사 D-${diff}` : "시험 종료";
+  dday.innerText = diff >= 0 ? `2회고사 D-${diff}` : "시험 종료";
 }
