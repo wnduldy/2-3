@@ -1,6 +1,7 @@
 // 수행평가
 const assignments = [
-{subject:"국어", date:"04-16 목요일 3교시", content:"현대소설 감상 및 분석 - 독서일지(5차시/10차시)"}
+{subject:"국어", date:"05-28 목요일 3교시", content:"현대소설 감상 및 분석 - 독서일지(7차시/10차시)"}
+{subject:"영어", date:"05-22 금요일 3교시", content:"시각자료 컴퓨터 바탕화면 저장 및 연습 / 발표 순서 랜덤 뽑기"}
 ];
 
 const list = document.getElementById("assignmentList");
@@ -15,10 +16,12 @@ if(list){
 
 // 학사일정
 const schedules = [
-"3/24 전국연합학력평가",
-"3/25~31 학부모 상담주간",
-"3/26 학교교육과정 설명회",
-"4/27~30 1학기 1회고사"
+"5/25 부처님 오신 날 대체공휴일",
+"5/27 수업 공개의 날",
+"6/3 전국동시지방선거일",
+"6/4 전국연합학력평가"
+"6/8~12 진로탐색주간"
+"6/30~7/3 1학기 2회고사"
 ];
 
 const calList = document.getElementById("calendarList");
@@ -103,7 +106,7 @@ function closePopup(){
 }
 
 // D-Day
-const examDate = new Date("2026-04-27");
+const examDate = new Date("2026-06-30");
 const diff = Math.ceil((examDate - new Date())/(1000*60*60*24));
 
 const dday = document.getElementById("examDday");
