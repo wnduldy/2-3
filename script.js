@@ -55,7 +55,13 @@ const mealEl = document.getElementById("meal");
 if(lunch) lunch.innerText = meal;
 if(mealEl) mealEl.innerText = meal;
 })
-.catch(()=>{});
+.catch(()=>{
+  const lunch = document.getElementById("lunch");
+  const mealEl = document.getElementById("meal");
+
+  if(lunch) lunch.innerText = "급식 없음";
+  if(mealEl) mealEl.innerText = "급식 없음";
+});
 
 // 🔥 갤러리 더보기
 function toggleGallery(galleryId, btnId){
