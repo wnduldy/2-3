@@ -50,7 +50,10 @@ fetch(`https://open.neis.go.kr/hub/mealServiceDietInfo?KEY=${KEY}&Type=json&ATPT
   const meal = data.mealServiceDietInfo[1].row[0].DDISH_NM.replace(/<br\/>/g,"\n");
 
   const lunch = document.getElementById("lunch");
-  if(lunch) lunch.innerText = meal;
+const mealEl = document.getElementById("meal");
+
+if(lunch) lunch.innerText = meal;
+if(mealEl) mealEl.innerText = meal;
 })
 .catch(()=>{});
 
