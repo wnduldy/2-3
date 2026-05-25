@@ -64,10 +64,12 @@ margin: 10px 0;
 
 
 .gallery img {
-width: 100%;
+max-height: 300px;
+width: auto;
+max-width: 100%;
 display: none;
+margin: 0 auto 8px auto;
 border-radius: 10px;
-margin-bottom: 8px;
 }
 
 
