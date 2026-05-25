@@ -110,7 +110,26 @@ document.querySelectorAll(".gallery img").forEach(img=>{
 function closePopup(){
   document.getElementById("popup").style.display = "none";
 }
+const timetable = {
+  1: ["영어1 정영학", "", "", "", "", "영어1 김형신", ""], // 월
+  2: ["", "", "문학 고진주", "진로 송한경", "", "대수 채병훈", "스포츠생활1 최익현"], // 화
+  3: ["스포츠생활1 최익현", "문학 신민영", "", "대수 채병훈", "", "영어1 송한경", ""], // 수
+  4: ["", "", "문학 신민영", "", "대수 채병훈", "문학 김단희", ""], // 목
+  5: ["", "", "영어1 송한경", "대수 채병훈", "창체", "창체", ""] // 금
+};
 
+const dayNames = ["일","월","화","수","목","금","토"];
+const day = new Date().getDay();
+
+const todayList = document.getElementById("todayTimetable");
+
+if(todayList && timetable[day]){
+  timetable[day].forEach((subject, i)=>{
+    const li = document.createElement("li");
+    li.innerText = `${i+1}교시 : ${subject || "-"}`;
+    todayList.appendChild(li);
+  });
+}
 // D-Day
 const examDate = new Date("2026-06-30");
 const diff = Math.ceil((examDate - new Date())/(1000*60*60*24));
