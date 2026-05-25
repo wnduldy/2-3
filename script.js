@@ -68,15 +68,7 @@ if(mealEl) mealEl.innerText = meal;
   if(mealEl) mealEl.innerText = "급식 없음";
 });
 
-// 🔥 갤러리 더보기
-function toggleGallery(galleryId, btnId){
-  const gallery = document.getElementById(galleryId);
-  const btn = document.getElementById(btnId);
 
-  gallery.classList.toggle("open");
-
-  btn.innerText = gallery.classList.contains("open") ? "접기" : "더보기";
-}
 
 // 🔥 슬라이드
 const slideIndex = {};
