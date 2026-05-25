@@ -4,7 +4,7 @@ const assignments = [
 {subject:"영어", date:"05-22 금요일 3교시", content:"시각자료 컴퓨터 바탕화면 저장 및 연습 / 발표 순서 랜덤 뽑기"}
 ];
 
-const list = document.getElementById("assignmentList");
+const list = document.getElementById("assignments");
 
 if(list){
   assignments.forEach(a=>{
