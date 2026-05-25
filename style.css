@@ -23,7 +23,29 @@ text-decoration: none;
 color: black;
 font-size: 14px;
 }
+/* 시간표 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 10px;
+}
 
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  background: #2d3a4b;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f8f8f8;
+}
 /* 박스 */
 .box {
 background: white;
