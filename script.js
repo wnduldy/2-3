@@ -1,7 +1,7 @@
 // 수행평가
 const assignments = [
 {subject:"국어", date:"05-28 목요일 3교시", content:"현대소설 감상 및 분석 - 독서일지(7차시/10차시)"},
-{subject:"영어", date:"05-22 금요일 3교시", content:"시각자료 컴퓨터 바탕화면 저장 및 연습 / 발표 순서 랜덤 뽑기"}
+{subject:"영어", date:"05-29 금요일 3교시", content:"전원 발표"}
 ];
 
 const list = document.getElementById("assignments");
