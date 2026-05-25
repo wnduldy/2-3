@@ -4,15 +4,20 @@ const assignments = [
 {subject:"영어", date:"05-29 금요일 3교시", content:"전원 발표"}
 ];
 
-const list = document.getElementById("assignments");
+const lists = [
+  document.getElementById("assignmentList"),
+  document.getElementById("assignments")
+];
 
-if(list){
-  assignments.forEach(a=>{
-    const li = document.createElement("li");
-    li.innerText = `${a.subject} - ${a.date} (${a.content})`;
-    list.appendChild(li);
-  });
-}
+lists.forEach(list => {
+  if(list){
+    assignments.forEach(a=>{
+      const li = document.createElement("li");
+      li.innerText = `${a.subject} - ${a.date} (${a.content})`;
+      list.appendChild(li);
+    });
+  }
+});
 
 // 학사일정
 const schedules = [
