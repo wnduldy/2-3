@@ -61,10 +61,7 @@ margin: 10px 0;
 }
 
 /* 갤러리 기본 */
-.gallery {
-max-height: 120px;
-overflow: hidden;
-}
+
 
 .gallery img {
 width: 100%;
@@ -73,14 +70,7 @@ border-radius: 10px;
 margin-bottom: 8px;
 }
 
-/* 더보기 눌렀을 때 */
-.gallery.open {
-max-height: none;
-}
 
-.gallery.open img {
-display: block;
-}
 
 /* 슬라이더 */
 .slider {
