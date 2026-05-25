@@ -79,21 +79,21 @@ text-align: center;
 }
 
 /* 슬라이드 버튼 */
-.prev, .next {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-font-size: 18px;
-background: rgba(0,0,0,0.5);
-color: white;
-border: none;
-padding: 6px 10px;
-border-radius: 8px;
-cursor: pointer;
+.slider {
+text-align: center;
 }
 
-.prev { left: 5px; }
-.next { right: 5px; }
+.prev,
+.next {
+position: static;
+width: auto;
+margin: 8px 5px;
+padding: 8px 15px;
+font-size: 16px;
+background: #2d3a4b;
+color: white;
+border-radius: 8px;
+}
 
 /* 버튼 (더보기) */
 button {
