@@ -1,8 +1,6 @@
 // 수행평가
 const assignments = [
-{subject:"문학", date:"06-11 목요일 3교시", content:"현대소설 감상 및 분석 - 비평문 작성 전 초안 준비(9차시/10차시)"},
-{subject:"대수", date:"06-10 수요일 4교시", content:"초안 작성"},
-{subject:"대수", date:"06-11 목요일 5교시", content:"최종안 작성"}
+
 ];
 
 const lists = [
@@ -22,12 +20,7 @@ lists.forEach(list => {
 
 // 학사일정
 const schedules = [
-"5/25 부처님 오신 날 대체공휴일",
-"5/27 수업 공개의 날",
-"6/3 전국동시지방선거일",
-"6/4 전국연합학력평가",
-"6/8~12 진로탐색주간",
-"6/30~7/3 1학기 2회고사"
+
 ];
 
 const calList = document.getElementById("calendarList");
