@@ -4,6 +4,10 @@ const assignments = [
 ];
 
 const lists = [
+  {subject:"영어", date:"9월 셋째 주(09/14~18)", content:"한국적 가치의 글로벌 재해석 논설문 작성 - 초안 작성"},
+  {subject:"국어", date:"9월 셋째 주(09/14~18)", content:"유의 관계를 활용한 자기소개 - 자기소개 글쓰기 작성 완료(30분) 및 소감 공유(20분)"},
+  {subject:"물리", date:"09/20 일요일 11시 59분", content:"스마트폰 활용 실험 설계 및 데이터 분석 수행평가"}
+  
   document.getElementById("assignmentList"),
   document.getElementById("assignments")
 ];
@@ -20,12 +24,12 @@ lists.forEach(list => {
 
 // 학사일정
 const schedules = [
-  {"7/10 학생회장, 부회장 선거",
-   "7/13 교육과정박람회",
-   "7/15~16 자율적교육과정운영주간"
-   "7/17 제헌절",
-   "7/20 방학식",
-   "8/11 개학식"}
+  {"9/24~25 추석연휴",
+   "10/5 개천절 대체공휴일",
+   "10/13~16 2학기 1회고사"
+   "10/29 수업 공개의 날",
+   "11/19 대학수학능력시험/재량휴업일",
+   "12/8~11 2학기 2회고사"}
 
 
 ];
@@ -112,11 +116,11 @@ function closePopup(){
   document.getElementById("popup").style.display = "none";
 }
 const timetable = {
-  1: ["", "영어1 정영학", "", "", "", "영어1 김형신", ""], // 월
-  2: ["", "", "문학 고진주", "진로 송한경", "", "대수 채병훈", "스포츠생활1 최익현"], // 화
-  3: ["스포츠생활1 최익현", "문학 신민영", "", "대수 채병훈", "", "영어1 송한경", ""], // 수
-  4: ["", "", "문학 신민영", "", "대수 채병훈", "문학 김단희", ""], // 목
-  5: ["", "", "영어1 송한경", "대수 채병훈", "창체", "창체", ""] // 금
+  1: ["H", "D", "B 진로 한혜숙", "A", "F", "I", "I"], // 월
+  2: ["A", "E", "B 스포츠 생활2 최익현", "D", "H", "C", "G"], // 화
+  3: ["I", "I", "F", "E", "G", "F", ""], // 수
+  4: ["D", "B 스포츠 생활2 최익현", "H", "E", "G", "C", "A"], // 목
+  5: ["H", "G", "C", "F", "창체", "창체", ""] // 금
 };
 
 const dayNames = ["일","월","화","수","목","금","토"];
@@ -132,7 +136,7 @@ if(todayList && timetable[day]){
   });
 }
 // D-Day
-const examDate = new Date("2026-06-30");
+const examDate = new Date("2026-10-13");
 const diff = Math.ceil((examDate - new Date())/(1000*60*60*24));
 
 const dday = document.getElementById("examDday");
